@@ -42,7 +42,6 @@ lines.forEach((line: string) => {
 lines.forEach((line: string) => {
     if (line === "") return;
     const gameNumber = parseInt(line.match(/\d+/)[0], 10);
-    console.log(gameNumber);
     const winningNumbers = line
         .match(/\:[\s\d]+\|/g)[0]
         .match(/\d+/g)
@@ -65,5 +64,4 @@ lines.forEach((line: string) => {
 });
 let numOfCards = 0;
 cards.forEach((cards) => (numOfCards += cards));
-console.log("cards: ", cards);
 console.log("numOfCards: ", numOfCards);
